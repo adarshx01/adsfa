@@ -60,8 +60,9 @@ const Page = () => {
   };
 
   return (
-    <div>
-      <h2>Buffer Solution Calculator</h2>
+    <div className='bg-red-200 h-screen w-screen'>
+      <div className=' pt-20'>
+      <h2 className='text-2xl pb-3'>Buffer Solution Calculator</h2>
       <label>
         Select Buffer Type:
         <select value={acid ? 'Acid' : 'Base'} onChange={(e) => (e.target.value === 'Acid' ? setAcid(true) : setAcid(false))}>
@@ -72,13 +73,13 @@ const Page = () => {
       <br />
       <label>
         {acid ? 'Acid' : 'Base'}:
-        <input type="text" value={acid ? acid : base} onChange={(e) => (acid ? setAcid(e.target.value) : setBase(e.target.value))} />
+        <input type="text" placeholder='enter value' value={acid ? acid : base} onChange={(e) => (acid ? setAcid(e.target.value) : setBase(e.target.value))} />
       </label>
       <br />
       <label>
         {acid ? 'Acid' : 'Base'} Concentration (M):
         <input
-          type="number"
+          type="number" placeholder='enter value' 
           value={acid ? acidConcentration : baseConcentration}
           onChange={(e) => (acid ? setAcidConcentration(e.target.value) : setBaseConcentration(e.target.value))}
         />
@@ -86,18 +87,19 @@ const Page = () => {
       <br />
       <label>
         Final Volume (L):
-        <input type="number" value={finalVolume} onChange={(e) => setFinalVolume(e.target.value)} />
+        <input type="number" value={finalVolume} placeholder='enter value'  onChange={(e) => setFinalVolume(e.target.value)} />
       </label>
       <br />
       <label>
         Desired pH:
-        <input type="number" value={ph} onChange={(e) => setPh(e.target.value)} />
+        <input type="number" value={ph} placeholder='enter value'  onChange={(e) => setPh(e.target.value)} />
       </label>
       <br />
-      <button onClick={calculateBuffer}>Calculate Buffer</button>
+      <button onClick={calculateBuffer} className='bg-green-200 border-rose-300 rounded-lg mt-6 ml-10'>Calculate Buffer</button>
       <br />
       {ph && <p>Buffer Type: {bufferType}</p>}
       {ph && <p>Final pH: {ph}</p>}
+      </div>
     </div>
   );
 };

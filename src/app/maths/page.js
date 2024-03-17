@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react';
-
+import Link from 'next/link'
 const Page = () => {
   const [image, setImage] = useState(null);
   const [result, setResult] = useState('');
@@ -45,6 +45,9 @@ const Page = () => {
         Solve
       </button>
       {result && <pre className='bg-grey-200 border-2 rounded-2xl  px-4 pb-40 mt-20 -ml-16 h-[18rem] w-[30rem]'>{result}</pre>}
+
+      <button className="button mt-20 ml-20 border-2 rounded-md bg-slate-400" ><Link href='maths/algebra'>Algebra</Link></button>
+      <button className="button mt-20 ml-60   border-2 rounded-md bg-slate-400" ><Link href='maths/matrix'>Matrix</Link></button>
     </div>
   );
 };
