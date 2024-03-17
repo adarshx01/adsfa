@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react';
 
-const PhotomathSolver = () => {
+const Page = () => {
   const [image, setImage] = useState(null);
   const [result, setResult] = useState('');
 
@@ -49,4 +49,4 @@ const PhotomathSolver = () => {
   );
 };
 
-export default PhotomathSolver;
+export default Page;

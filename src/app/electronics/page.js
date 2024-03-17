@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react';
 
-const page = () => {
+const Page = () => {
   const [numBands, setNumBands] = useState(4);
   const [colors, setColors] = useState(['', '', '', '']);
   const [result, setResult] = useState('');
@@ -85,4 +85,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

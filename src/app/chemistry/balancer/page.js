@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react';
 
-const page = () => {
+const Page = () => {
   const [binaryNumber, setBinaryNumber] = useState('');
   const [decimalNumber, setDecimalNumber] = useState('');
   const [hexadecimalNumber, setHexadecimalNumber] = useState('');
@@ -93,11 +93,11 @@ const page = () => {
       <br />
       <label>Octal Number: {octalNumber}</label>
       <br />
-      <label>1's Complement: {onesComplement}</label>
+      <label>1s Complement: {onesComplement}</label>
       <br />
-      <label>2's Complement: {twosComplement}</label>
+      <label>2s Complement: {twosComplement}</label>
     </div>
   );
 };
 
-export default page;
+export default Page;

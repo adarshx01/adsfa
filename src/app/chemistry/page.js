@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-const page = () => {
+const Page = () => {
   return (
     <div className='containered h-[100%] h-screen'>
             <div className="h-[100vh] pt-20" >
@@ -15,4 +15,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

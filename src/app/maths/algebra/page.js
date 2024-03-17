@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react';
 
-function page() {
+function Page() {
   const [quadraticCoefficients, setQuadraticCoefficients] = useState({ a: 0, b: 0, c: 0 });
   const [cubicCoefficients, setCubicCoefficients] = useState({ a: 0, b: 0, c: 0, d: 0 });
   const [quadraticRoots, setQuadraticRoots] = useState([]);
@@ -156,4 +156,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;

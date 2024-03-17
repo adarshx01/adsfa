@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react';
 
-const page = () => {
+const Page = () => {
   const [acid, setAcid] = useState('');
   const [base, setBase] = useState('');
   const [acidConcentration, setAcidConcentration] = useState('');
@@ -102,4 +102,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

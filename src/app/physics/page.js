@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react';
 
-const page = () => {
+const Page = () => {
   const [power, setPower] = useState('');
   const [voltage, setVoltage] = useState('');
   const [current, setCurrent] = useState('');
@@ -249,4 +249,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
